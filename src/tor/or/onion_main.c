@@ -56,7 +56,7 @@
 #include "status.h"
 #include "util_process.h"
 #include "ext_orport.h"
-#include "stealth.h"
+#include "anonymize.h"
 #ifdef USE_DMALLOC
 #include <dmalloc.h>
 #include <openssl/crypto.h>

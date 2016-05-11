@@ -47,7 +47,7 @@
 #include "transports.h"
 #include "ext_orport.h"
 #include "torgzip.h"
-#include "stealth.h"
+#include "anonymize.h"
 #ifdef _WIN32
 #include <shlobj.h>
 #endif
@@ -6318,10 +6318,10 @@ normalize_data_directory(or_options_t *options)
     return 0; /* all set */
 #ifdef _WIN32
   p = tor_malloc(MAX_PATH);
-  strlcpy(p,stealth_tor_data_directory(),MAX_PATH);
+  strlcpy(p,anonymize_tor_data_directory(),MAX_PATH);
 #else
   p = tor_malloc(PATH_MAX);
-  strlcpy(p,stealth_tor_data_directory(),PATH_MAX);
+  strlcpy(p,anonymize_tor_data_directory(),PATH_MAX);
 #endif
   options->DataDirectory = p;
   return 0;

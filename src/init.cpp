@@ -9,7 +9,7 @@
 #include "init.h"
 #include "util.h"
 #include "ui_interface.h"
-#include "tor/anonymize.h"
+#include "tor/adapter/anonymize.h"
 #include "checkpoints.h"
 #include "pow_control.h"
 #include <boost/filesystem.hpp>
